@@ -10,6 +10,7 @@
 
     <h2>Admin Login</h2>
 
+    <!-- ✅ FORM -->
     <form onsubmit="adminLogin(event)">
         <label>Email:</label>
         <input type="email" required>
@@ -23,6 +24,8 @@
     <p><a href="index.html">Back to Home</a></p>
 
 </div>
+
+<!-- ✅ SCRIPT goes here -->
 <script>
 function adminLogin(event) {
     event.preventDefault();
@@ -30,5 +33,6 @@ function adminLogin(event) {
     window.location.href = "admin_dashboard.html";
 }
 </script>
+
 </body>
 </html>
