@@ -10,7 +10,7 @@
 
     <h2>Student Login</h2>
 
-    <form action="#">
+    <form onsubmit="loginSuccess(event)">
         <label>Email:</label>
         <input type="email" required>
 
@@ -24,6 +24,12 @@
     <p><a href="index.html">Back to Home</a></p>
 
 </div>
-
+<script>
+function loginSuccess(event) {
+    event.preventDefault();
+    alert("Login Successful ✅");
+    window.location.href = "dashboard.html";
+}
+</script>
 </body>
 </html>
